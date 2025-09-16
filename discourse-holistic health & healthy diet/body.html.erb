@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Holistic Health & Healthy Diet</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+.signup {
+  color: #6EB23F;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.welcome {
+    margin-top: 10px;
+    position: static;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #1A1A1A;
+    font-family: 'Lato';
+}
+
+.welcome-note {
+    font-family: 'Lato';
+    position: static;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #4E4949;
+    margin-bottom: 50px;
+}
+
+  .canvas{
+    position:relative;
+    width:1440px;
+    height:1280px;
+    margin:0 auto;
+    background:#fff;
+    font-family:"Lato",sans-serif;
+    color:#1A1A1A;
+  }
+
+  .rect-690 {
+      top: 24px;
+    position: absolute;
+    width: 976px;
+    height: 300px;
+    left: 232px;
+    background: #CCD4BC;
+}
+
+
+  .mask-group,
+  .rect-691{
+    position:absolute;
+    width:475px;
+    height:300px;
+    left:733px;
+    top: 24px;
+  }
+  .rect-691{ background:#D9D9D9; }
+
+.hero-img {
+    position: absolute;
+    width: 475px;
+    height: 299.71px;
+    right: 232px;
+    top: 24px;
+    object-fit: cover;
+}
+
+
+  .eyebrow{
+    position:absolute;
+    width:158px;height:22px;
+    left:262px;top:62px;
+    font-weight:700;font-size:18px;line-height:22px;
+    text-transform:uppercase;color:#6EB23F;
+  }
+  .title{
+    position:absolute;
+    width:374px;height:36px;
+    left:calc(50% - 374px/2 - 271px); top:95px;
+    font-weight:700;font-size:42px;line-height:36px;
+    color:#1A1A1A;
+  }
+  .lead{
+    position:absolute;
+    width:379px;height:60px;
+    left:calc(50% - 379px/2 - 268.5px); top:140px;
+    font-weight:600;font-size:20px;line-height:30px;
+    color:#1A1A1A;
+  }
+  .sub{
+    position:absolute;
+    width:408px;height:22px;
+    left:calc(50% - 408px/2 - 254px); top:217px;
+    font-weight:400;font-size:18px;line-height:22px;
+    color:#1A1A1A;
+  }
+
+
+  .cta{
+    text-decoration: none;
+    position:absolute;
+    left:262px; top:262px;
+    width:257px; height:50px;
+    background:#6EB23F;border-radius:5px;
+    display:grid;place-items:center;
+  }
+  .cta span{
+    font-weight:700;font-size:18px;line-height:24px;
+    letter-spacing:.15em;text-transform:uppercase;color:#fff;
+  }
+
+  /* Section headings */
+  .conv-h{
+    position:absolute;
+    width:665px;height:36px;
+    left:calc(50% - 665px/2 - 7.5px); top:380px;
+    font-weight:700;font-size:30px;line-height:36px; color:#1A1A1A;
+    text-align:center;
+  }
+  .howto-h{
+    position:absolute;
+    width:208px;height:36px;
+    left:calc(50% - 208px/2); top:912px;
+    font-weight:700;font-size:24px;line-height:36px;color:#1A1A1A;
+    text-align:center;
+  }
+
+
+  .conv-intro{
+    position:absolute;
+    width:760px;height:81px;
+    left:calc(50% - 760px/2); top:450px;
+    font-weight:400;font-size:16px;line-height:27px;
+    color:#4E4949; text-align:center;
+  }
+  .topics-intro{
+    position:absolute;
+    width:760px;height:27px;
+    left:calc(50% - 760px/2); top:565px;
+    font-weight:700;font-size:18px;line-height:27px;
+    color:#1A1A1A; text-align:center;
+  }
+
+  .col-1,.col-2,.col-3{
+    white-space: nowrap;
+    position:absolute;
+    font-weight:400;font-size:16px;line-height:32px;color:#4E4949;
+  }
+  .col-1{ left:300px; top:624px; width:243px; }
+  .col-2{ left:691px; top:624px; width:148px; }
+  .col-3{ left:987px; top:624px; width:173px; }
+  .col-1 ul,.col-2 ul,.col-3 ul{ margin:0; padding-left:20px; list-style:disc; }
+  .col-1 li::marker,.col-2 li::marker,.col-3 li::marker{ color:#4E4949; font-size:23px; }
+
+  /* Light green CTA panel */
+  .panel{
+    position:absolute;
+    width:878px;height:100px;
+    left:282px; top:782px;
+    background:#F2F9EC;border-radius:10px;
+  }
+  .panel-text{
+    position:absolute;
+    width:499px;height:30px;
+    left:calc(50% - 499px/2 - 143.5px); top:817px;
+    font-weight:400;font-size:19px;line-height:30px;color:#1A1A1A;
+  }
+  .panel-btn{
+      text-decoration: none;
+    position:absolute;
+    width:257px;height:50px;
+    left:858px; top:807px;
+    background:#6EB23F;border-radius:5px;
+    display:grid;place-items:center;
+  }
+  .panel-btn span{
+      text-decoration: none;
+    font-weight:700;font-size:18px;line-height:24px;
+    letter-spacing:.15em;text-transform:uppercase;color:#fff;
+  }
+
+  /* How-to columns */
+  .v-divider{
+    position:absolute; width:1px; height:180px;
+    left:calc(50% - 1px/2 - .5px); top:992px;
+    background:#1A1A1A; opacity:.2;
+  }
+
+  .how-col-left h3{
+    position:absolute; width:428px; height:60px;
+    left:calc(50% - 428px/2 - 245px); top: 960px;
+    font-weight:700;font-size:20px;line-height:30px;text-align:center;color:#1A1A1A;
+  }
+  .how-col-left p{
+    position:absolute; width:400px; height:135px;
+    left:calc(50% - 400px/2 - 245px); top:1052px;
+    font-weight:400;font-size:16px;line-height:27px;text-align:center;color:#4E4949;
+  }
+
+  .how-col-right h3{
+    position:absolute; width:428px; height:60px;
+    left:calc(50% - 428px/2 + 244px); top: 960px;
+    font-weight:700;font-size:20px;line-height:30px;text-align:center;color:#1A1A1A;
+  }
+  .how-col-right p{
+    position:absolute; width:400px; height:135px;
+    left:calc(50% - 400px/2 + 244px); top:1052px;
+    font-weight:400;font-size:16px;line-height:27px;text-align:center;color:#4E4949;
+  }
+
+  .tildes{
+    position:absolute; width:109px;height:34px;
+    left:calc(50% - 109px/2 - .5px);
+    top: 1236px;
+    color:#6EB23F; font-size:48px; line-height:28px; text-align:center;
+    font-weight:400; text-transform:lowercase;
+  }
+  
+/* Header */
+
+.site-header {
+    box-shadow: none;
+    border-bottom: 1px solid rgb(189 189 189);
+}
+@media (min-width: 40rem) {
+    .site-header {
+        height: 4em;
+    }
+}
+
+
+.site-header {
+  background: #fff;
+  width: 100%;
+}
+
+.header-container {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px; /* fixed height */
+}
+
+/* Logo */
+.header-logo{
+    margin-left: 54px;
+}
+
+.header-logo img {
+    margin-top: 4px;
+    height: 2.66em;
+    display: block;
+}
+
+.header-actions {
+    margin-right: -5.0px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-btn {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #0073e6;
+  text-transform: uppercase;
+  font-family: Lato, Arial, sans-serif;
+}
+
+
+.separator {
+    font-size: 19.3px;
+    color: #0073e6;
+    margin-top: 3.1px;
+    margin-left: 1px;
+    margin-right: -0.4px;
+}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="header-logo">
+      <a href="/">
+        <img src="https://community.republicofgreen.com/uploads/db4211/original/1X/021e74596b3984614bc2180e7714ae570814a973.jpeg" alt="Site Logo">
+      </a>
+    </div>
+
+    <!-- Buttons -->
+    <div class="header-actions">
+      <a href="https://community.republicofgreen.com/registration" class="header-btn">REGISTER</a>
+      <span class="separator">|</span>
+      <a href="/login" class="header-btn">LOG IN</a>
+    </div>
+  </div>
+</header>
+
+<div class="canvas">
+
+  <div class="rect-690"></div>
+  <div class="mask-group"></div>
+  <div class="rect-691"></div>
+  <img class="hero-img" src="https://community.republicofgreen.com/uploads/db4211/original/1X/86143397e9606e13094120401e1eddb21bf7cc6f.png" alt=""/>
+
+  <div class="eyebrow">RoG Community</div>
+  <div class="title">Holistic Health & Healthy Diet</div>
+  <div class="lead">Want to achieve vibrant health naturally??</div>
+  <div class="sub">The RoG Community is the place to chat about it!</div>
+
+  <a class="cta" href="https://community.republicofgreen.com/c/sustainable-lifestyle/holistic-health/28"><span>GO TO DISCUSSION</span></a>
+
+  <div class="conv-h">Welcome to the Holistic Health & Healthy Diet conversation</div>
+  <div class="conv-intro">
+Ready to explore a more natural path to vibrant health? The Republic of Green Community is where you'll find inspiration, connect with like-minded people, and discover actionable ways to thrive through holistic health and a healthy diet.
+  </div>
+  <div class="topics-intro">You can join - or create - discussions on all sorts<br>of interesting holistic health and healthy diet topics:</div>
+
+  <div class="col-1">
+    <ul>
+      <li>Blue Zones Longevity</li>
+      <li>Anti-Inflammatory Foods</li>
+      <li>Nature Therapy for Stress</li>
+      <li>Food as Medicine</li>
+    </ul>
+  </div>
+  <div class="col-2">
+    <ul>
+      <li>Gut Health for Mood</li>
+      <li>Women's Hormone Balance</li>
+      <li>Mindful Breathwork</li>
+      <li>Healthy Meal Prep on a Budget</li>
+    </ul>
+  </div>
+  <div class="col-3">
+    <ul>
+      <li>Functional Medicine Root Cause</li>
+      <li>Holistic Pain Relief</li>
+      <li>Personalized DNA Diet</li>
+      <li>Acupuncture & Chiropractic Care</li>
+    </ul>
+  </div>
+
+  <div class="panel"></div>
+  <div class="panel-text">See what people are talking about in Holistic Health & Healthy Diet</div>
+  <a class="panel-btn" href="https://community.republicofgreen.com/c/sustainable-lifestyle/holistic-health/28"><span>GO TO DISCUSSION</span></a>
+
+  <div class="howto-h">How to Get Started</div>
+
+  <div class="v-divider" aria-hidden="true"></div>
+
+  <div class="how-col-left">
+    <h3>You can freely browse, <br>must register to post</h3>
+  <p>
+  The RoG Community is free to join. You can browse <br>
+  all of the content without registering.<br>
+  To like, comment or post simply click on the 
+  <a href="https://community.republicofgreen.com/registration" class="signup">REGISTER</a> <br>
+  link to register and then you'll be able to <br> actively participate.
+</p>
+
+  </div>
+
+  <div class="how-col-right">
+    <h3>You can be a Founding Contributor<br> in this growing community</h3>
+    <p>You are early here! But that is awesome because<br>
+    your contributions will help shape the content and<br>
+    vibe of this important conversation from the very<br>
+    beginning. So, please make some posts and<br>
+    comments to kick things off!</p>
+  </div>
+
+  <div class="tildes">~  ~  ~</div>
+</div>
+<!-- after .tildes -->
+<div class="welcome">Welcome!</div>
+<div class="welcome-note">
+  We look forward to seeing you around the community and learning what's on your mind!
+</div>
+
+
+</body>
+</html>

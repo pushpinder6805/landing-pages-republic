@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Republic of Green Registration</title>
+  <style>
+.form-footer {
+  display: flex;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin: 30px -30px -30px;
+  overflow: hidden; 
+}
+
+.form-footer-left {
+  flex: 1;
+  background: #367bb7;
+}
+
+
+.form-footer-right {
+  background: #2d6ba3;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.submit-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.submit-btn::after {
+  content: " →";
+  font-weight: normal;
+  margin-left: 6px;
+}
+
+.submit-btn:hover {
+  text-decoration: underline;
+}
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 40px;
+    }
+    .container1 {
+      box-shadow: 0px 15px 33px 4px #00000026;
+      max-width: 500px;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      padding: 30px;
+      border-radius: 6px;
+      margin-top: 2em;
+    }
+    .logo {
+      margin-bottom: 5px;
+    }
+    .logo img {
+    margin-top: 24px;
+    height: 50px;
+    width: 250px;
+}
+    h2 {
+      color: #367bb7FF;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .form-header {
+      color: #FBFAFAFF;
+    background-color: #367bb7FF;
+    border: 0px none #FFFFFF;
+    border-radius: 0px;
+    font-size: 24px;
+    padding: 6px 0px 6px 0px;
+    box-shadow: 0px 0px 0px 0px #FFFFFF;
+    line-height: 1.5;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 15px 0 8px;
+      text-align: left;
+    }
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+      margin-bottom: 13px;
+    }
+    .class1{
+        text-align: left;
+        font-size: 19px;
+    }
+    .class2 {
+    text-align: left;
+    font-size: 18px;
+    margin-top: -2px;
+}
+  </style>
+</head>
+<body>
+  <div class="container1">
+    <div class="logo">
+      <img src="https://community.republicofgreen.com/uploads/db4211/original/1X/021e74596b3984614bc2180e7714ae570814a973.jpeg" alt="Logo">
+    </div>
+    <h2>Online Community Registration</h2>
+    <p class="class1">Welcome! Please register in order to post to the community. </p>
+    <br>
+    <p class="class2">We have a short (1 min) survey to help us understand who you are and how we can best serve your needs.</p>
+    <br>
+    <div class="form-header">Get Started</div>
+    <br>
+    <form id="regForm">
+  <label for="memberType">What type of member are you ? *</label>
+  <select id="memberType" required>
+    <option value="">Please select</option>
+    <option value="https://community.republicofgreen.com/individual-register">Individual</option>
+    <option value="https://community.republicofgreen.com/influencer-register">Influencer / Creator</option>
+    <option value="https://community.republicofgreen.com/business-register">Business or Nonprofit</option>
+  </select>
+
+  <div class="form-footer">
+  <div class="form-footer-left"></div>
+  <div class="form-footer-right">
+    <button type="submit" class="submit-btn">NEXT</button>
+  </div>
+</div>
+</form>
+
+    
+  </div>
+
+  <script>
+    document.getElementById("regForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const url = document.getElementById("memberType").value;
+      if (url) {
+        window.location.href = url;
+      }
+    });
+  </script>
+</body>
+</html>
